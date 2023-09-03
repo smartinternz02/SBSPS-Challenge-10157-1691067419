@@ -17,3 +17,7 @@ These models are trained using the "Campus Recruitment" dataset from kaggle --->
       >pip install scikit-learn==1.1.1
       
       >pip install requests
+
+---> Command to run the project
+
+      >python -m flask run
