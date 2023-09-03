@@ -8,7 +8,11 @@ This project objective is to build two machine learning models:-
 
 These models are trained using the "Campus Recruitment" dataset from kaggle ---> https://www.kaggle.com/datasets/benroshan/factors-affecting-campus-placement
 
----> Soft requirements(commands for python packages should be installed inorder to run this project):
+---> Software requirements:
+
+      >Visual Studio Code
+      
+      commands for python packages should be installed inorder to run this project
 
       >pip install flask
       
