@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Input form</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Application Form</h2>
+    <form action="/input" method="post" id="form">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">---select---</option>
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select>
+
+        <label for="ssc">SSC Percentage:</label>
+        <input type="number" id="ssc" name="ssc" step="0.01" required>
+
+        <label for="hsc">HSC Percentage:</label>
+        <input type="number" id="hsc" name="hsc" step="0.01" required>
+
+        <label for="degree">Degree Percentage:</label>
+        <input type="number" id="degree" name="degree" step="0.01" required>
+
+        <label for="experience">Work Experience:</label>
+        <select id="experience" name="experience" required>
+            <option value="">---select---</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <label for="specialization">Specialization:</label>
+        <select id="specialization" name="specialization" required>
+            <option value="">---select---</option>
+            <option value="0">Mkt&Fin</option>
+            <option value="1">Mkt&HR</option>
+        </select>
+
+        <label for="mba">MBA Percentage:</label>
+        <input type="number" id="mba" name="mba" step="0.01" required>
+
+        <label for="etest">E-Test Percentage:</label>
+        <input type="number" id="etest" name="etest" step="0.01" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+  <h2>Output : {{Output}}</h2>
+  <h2>Expected Salary: {{sal}}</h2>
+</div>
+</body>
+
+</html>
